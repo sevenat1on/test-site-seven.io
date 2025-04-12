@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Messenger</title>
+  <title>Messenger</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="chat-container">
+  <div class="user-list">
+    <h3>Select a user to chat with</h3>
+    <ul id="userList">
+      <!-- Список користувачів буде заповнено через JavaScript -->
+    </ul>
+  </div>
+
+  <div class="chat-container" id="chatContainer" style="display: none;">
+    <h3 id="chatWithUser"></h3>
     <div id="messages" class="messages"></div>
     <input type="text" id="messageInput" placeholder="Enter your message" />
     <button id="sendBtn">Send</button>
